@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+        <div class="timer-box">
+          <div class="timer-text">Welcome!</div>
+
+          <div class="timer-set-time">
+            
+            <div class="timer-hour">
+              <input id="timer-hour" class="input" type="number" value="00" min="0" oninput="format(this)" />
+            </div>
+
+            <div class="timer-minute">
+              <input id="timer-minute" class="input" type="number" value="00" min="0" oninput="format(this)" />
+            </div>
+
+            <div class="timer-second">
+              <input id="timer-second" class="input" type="number" value="00" min="0" oninput="format(this)" />
+            </div>
+
+          </div>
+
+              <div class="timer-btn">
+
+                <button id="timer-start" class="button-81 timer_button" role="button">
+                  START
+                </button>
+                
+                <button id="timer-reset" class="button-81 timer_button" role="button">
+                  RESET
+                </button>
+                
+                <button id="timer-cancel" class="button-81 timer_button" role="button">
+                  PAUSE
+                </button>
+              
+              </div>
+        
+              <button class="button-48" role="button"><span class="text">
+                <a href="../index.html">HOME</a>
+              </span></button>
+
+
+        </div>
+
+        <audio id="myaudio" src="blinding_lights.mp3"></audio>
+
+    <script src="index.js"></script>
+  </body>
+</html>
